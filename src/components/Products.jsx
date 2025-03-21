@@ -88,7 +88,6 @@ const Products = () => {
                     className="btn btn-dark m-1"
                     onClick={() => {
                       toast.success("Added to cart");
-                      addProduct(product);
                     }}
                   >
                     Add to Cart
@@ -111,7 +110,7 @@ const Products = () => {
           </div>
         </div>
         <div className="row justify-content-center">
-          {loading ? <Loading /> : <ShowProducts />}
+          <ShowProducts />
         </div>
       </div>
     </>
