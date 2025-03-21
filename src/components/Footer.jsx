@@ -18,10 +18,10 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-3">Quick Links</h2>
           <ul className="space-y-2">
-            <li><a href="#" className="text-gray-400 hover:text-white">Home</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Shop</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">About Us</a></li>
-            <li><a href="#" className="text-gray-400 hover:text-white">Contact</a></li>
+            <li><button className="text-gray-400 hover:text-white">Home</button></li>
+            <li><button className="text-gray-400 hover:text-white">Shop</button></li>
+            <li><button className="text-gray-400 hover:text-white">About Us</button></li>
+            <li><button className="text-gray-400 hover:text-white">Contact</button></li>
           </ul>
         </div>
 
@@ -29,15 +29,15 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-3">Follow Us</h2>
           <div className="flex justify-center md:justify-start space-x-5">
-            <a href="#" className="text-gray-400 hover:text-white">
+            <button className="text-gray-400 hover:text-white">
               <i className="fab fa-facebook text-2xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            </button>
+            <button className="text-gray-400 hover:text-white">
               <i className="fab fa-instagram text-2xl"></i>
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white">
+            </button>
+            <button className="text-gray-400 hover:text-white">
               <i className="fab fa-twitter text-2xl"></i>
-            </a>
+            </button>
           </div>
         </div>
 

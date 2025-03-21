@@ -7,10 +7,6 @@ import img6 from "../pages/furnitures/khloe-arledge-8Rz_RIyp5FM-unsplash.jpg"
 import img7 from "../pages/furnitures/paul-weaver-nWidMEQsnAQ-unsplash.jpg"
 import img8 from "../pages/furnitures/pickawood-rwa0Yh38FeA-unsplash.jpg"
 import img9 from "../pages/furnitures/pierre-chatel-innocenti-pxoZSTdAzeU-unsplash.jpg"
-import img10 from "../pages/furnitures/scopic-ltd-NLlWwR4d3qU-unsplash.jpg"
-// import img11 from "../pages/furnitures/spacejoy-IH7wPsjwomc-unsplash.jpg"
-// import img12 from "../pages/furnitures/jean-philippe-delberghe-Ry9WBo3qmoc-unsplash.jpg"
-// import img13 from "../pages/furnitures/di_an_h-g_8MrEZAvyE-unsplash.jpg"
 
 export const products = [
   {
