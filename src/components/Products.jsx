@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { addCart } from "../redux/action";
+
 import { products } from "../pages/furniture_products"
 
 import Skeleton from "react-loading-skeleton";
@@ -11,34 +9,6 @@ import toast from "react-hot-toast";
 
 
 const Products = () => {
-  const [data, setData] = useState([]);
-  const [filter, setFilter] = useState(data);
-  const [loading, setLoading] = useState(false);
-  let componentMounted = true;
-
-  const dispatch = useDispatch();
-
-  const addProduct = (product) => {
-    dispatch(addCart(product));
-  };
-
-  useEffect(() => {
-    const getProducts = async () => {
-      setLoading(true);
-      const response = await fetch("https://fakestoreapi.com/products");
-      if (componentMounted) {
-        setData(await response.clone().json());
-        setFilter(await response.json());
-        setLoading(false);
-      }
-
-      return () => {
-        componentMounted = false;
-      };
-    };
-
-    getProducts();
-  }, []);
 
   const Loading = () => {
     return (
@@ -73,11 +43,6 @@ const Products = () => {
         </div>
       </>
     );
-  };
-
-  const filterProduct = (cat) => {
-    const updatedList = data.filter((item) => item.category === cat);
-    setFilter(updatedList);
   };
 
   const ShowProducts = () => {
