@@ -1,55 +1,13 @@
-
-import { products } from "../pages/furniture_products"
-
-import Skeleton from "react-loading-skeleton";
+import { products } from "../pages/furniture_products";
 import "react-loading-skeleton/dist/skeleton.css";
 
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 
-
 const Products = () => {
-
-  const Loading = () => {
-    return (
-      <>
-     
-        <div className="col-12 py-5 text-center">
-          <Skeleton height={40} width={560} />
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
-          <Skeleton height={592} />
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
-          <Skeleton height={592} />
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
-          <Skeleton height={592} />
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
-          <Skeleton height={592} />
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
-          <Skeleton height={592} />
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
-          <Skeleton height={592} />
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
-          <Skeleton height={592} />
-        </div>
-        <div className="col-md-4 col-sm-6 col-xs-8 col-12 mb-4">
-          <Skeleton height={592} />
-        </div>
-      </>
-    );
-  };
-
   const ShowProducts = () => {
     return (
       <>
-        
-
         {products.map((product, index) => {
           return (
             <div
@@ -78,10 +36,7 @@ const Products = () => {
                     <li className="list-group-item">Vestibulum at eros</li> */}
                 </ul>
                 <div className="card-body">
-                  <Link
-                    to={"/product/" + index}
-                    className="btn btn-dark m-1"
-                  >
+                  <Link to={"/product/" + index} className="btn btn-dark m-1">
                     Buy Now
                   </Link>
                   <button
